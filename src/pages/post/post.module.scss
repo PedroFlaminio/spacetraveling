@@ -1,0 +1,119 @@
+.postContainer {
+  padding: 0 2rem;
+}
+
+.banner {
+  height: 30rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.post {
+  max-width: 700px;
+  margin: 5rem auto 0;
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 1.5rem;
+  }
+
+  .lastEditTime {
+    display: block;
+    color: var(--gray-300);
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 0.87rem;
+  }
+
+  .postContent {
+    margin-top: 4rem;
+
+    &:last-child {
+      margin-bottom: 5rem;
+    }
+
+    h2 {
+      font-size: 1.85rem;
+      margin-bottom: 2rem;
+    }
+
+    .body p {
+      margin-bottom: 1rem;
+      line-height: 2rem;
+    }
+  }
+
+  .divider {
+    height: 1px;
+    background: var(--gray-100);
+    opacity: 0.1;
+    margin: 3.75rem 0 3rem;
+  }
+
+  .prevNextPost {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+    div {
+      max-width: 15rem;
+      text-align: left;
+
+      &:first-child {
+        display: inline-block;
+      }
+      &:last-child {
+        float: right;
+        text-align: right;
+      }
+    }
+
+    h3 {
+      font-weight: normal;
+    }
+
+    a {
+      display: block;
+      margin-top: 0.5rem;
+      color: var(--pink);
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .banner {
+    height: 25rem;
+  }
+
+  .post {
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    .postContent h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  .banner {
+    height: 17rem;
+  }
+
+  .post {
+    margin-top: 0;
+
+    h1 {
+      line-height: 2.5rem;
+    }
+  }
+}
